@@ -1,5 +1,5 @@
 ###############################################################################
-# FileMerger                                                                  #
+# PyMerge                                                                     #
 # Author: Dyon                                                                #
 # Description: Script that merges text files into one single file.            #
 ###############################################################################
@@ -37,7 +37,7 @@ config = {
 ##########################################
 
 
-class FileMerger:
+class PyMerge:
 
     sameDirForMergedFiles = False
     mergedFilesPath = ''
@@ -83,6 +83,6 @@ class FileMerger:
             result.close()
 
 
-fm = FileMerger()
+pm = PyMerge()
 
-fm.merge_files()
+pm.merge_files()
