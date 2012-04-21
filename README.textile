@@ -1,0 +1,20 @@
+h1. PyMerge
+
+PyMerge is a simple tool to merge virtually unlimited files into one single file. 
+
+h2. Usage
+
+* Open *PyMerge.py* file with your favourite text editor and edit the lines below *CONFIGURATION SECTION*. See Configuration below for more info.
+* Once done, run it!
+
+h2. Configuration
+
+There are some configuration options to allow you to customize the way PyMerge works. These options are stored as key-value pairs.
+
+* *sameDirForMergedFiles:* This setting makes PyMerge override the *destination* setting in each path configuration.
+* *mergedFilesPath:* If previous setting is set to True, this is the path where the merged files are going to be stored.
+* *pattern*: This is the pattern that PyMerge will search for when finding files to merge. For example, ==*.sql== pattern will find every file whose name ends in .sql.
+* *paths:* Array of key-value pairs.
+** *source:* The source where PyMerge will find (recursively) for files matching the pattern set in the previous setting.
+** *destination:* If *sameDirForMergedFiles* is set to False, the output path where PyMerge will save the merged file.
+** *filename:* The name of the output file.
