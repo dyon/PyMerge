@@ -74,7 +74,7 @@ class PyMerge:
 
             result = open(os.path.join(destination, filename), 'w+')
 
-            for file in files:
+            for file in sorted(files):
                 for line in open(file):
                     result.write(line)
 
